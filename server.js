@@ -2,6 +2,8 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const port = 3001;
+require('dotenv').config();
+
 
 const path = require('path');
 const admin = require('firebase-admin');
@@ -140,13 +142,14 @@ app.get('/shortest-path', (req, res) => {
 
 
 
-// Initialize Firebase Admin
-const serviceAccount = require(path.join(__dirname, 'config', 'serviceAccountKey.json'));
+const serviceAccount = JSON.parse(
+    Buffer.from(process.env.FIREBASE_SERVICE_ACCOUNT, 'base64').toString('utf-8')
+);
+
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://finalproject-map-fbe81-default-rtdb.firebaseio.com"
+    databaseURL: "https://finalproject-map-fbe81-default-rtdb.firebaseio.com",
 });
-
 const db = admin.database();
 
 

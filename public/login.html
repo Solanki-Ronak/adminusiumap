@@ -18,7 +18,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #000;
+            background-color: white;
             color: white;
             position: relative;
             overflow: hidden;
@@ -68,14 +68,15 @@
 
         /* Login Container */
         .login-container {
-            background: rgba(20, 20, 20, 0.95);
+            background: white;
             padding: 40px;
             border-radius: 20px;
             box-shadow: 0 8px 32px rgba(255, 102, 0, 0.2);
             position: relative;
             z-index: 1;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 102, 0, 0.2);
+          
+            border: 1px solid #fcc807;
             width: 400px;
             max-width: 90%;
         }
@@ -86,7 +87,7 @@
         }
 
         .login-header h1 {
-            color: #fff;
+            color: #2c3992;
             font-size: 28px;
             font-weight: 600;
             font-family: 'Orbitron', sans-serif;
@@ -103,7 +104,7 @@
         .input-group label {
             display: block;
             margin-bottom: 8px;
-            color: #ff6600;
+            color: #2c3992;
             font-size: 14px;
             font-weight: 500;
         }
@@ -111,27 +112,28 @@
         .input-group input {
             width: 100%;
             padding: 12px 15px;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 102, 0, 0.3);
+           
+            background-color: white;
+    border: 1px solid #fcc807;
             border-radius: 8px;
-            color: white;
+            color: #2c3992;
             font-size: 16px;
             transition: all 0.3s ease;
         }
 
         .input-group input:focus {
             outline: none;
-            border-color: #ff6600;
+            border-color: #fcc807;
             box-shadow: 0 0 10px rgba(255, 102, 0, 0.2);
         }
 
         .login-btn {
             width: 100%;
             padding: 14px;
-            background: linear-gradient(45deg, #ff6600, #ff8533);
+            background: #fcc807;
             border: none;
             border-radius: 8px;
-            color: white;
+            color: #2c3992;
             font-size: 16px;
             font-weight: 600;
             cursor: pointer;
@@ -194,10 +196,10 @@
     align-items: center;
     gap: 8px;
     padding: 10px 20px;
-    background: rgba(255, 102, 0, 0.1);
+    background: #fcc807;
     border: 1px solid rgba(255, 102, 0, 0.2);
     border-radius: 8px;
-    color: #ff6600;
+    color: #2c3992;
     text-decoration: none;
     transition: all 0.3s ease;
     z-index: 10;
@@ -205,7 +207,7 @@
 }
 
 .back-button svg {
-    stroke: #ff6600;
+    stroke: #2c3992;
     transition: transform 0.3s ease;
 }
 
@@ -214,7 +216,8 @@
 }
 
 .back-button:hover {
-    background: rgba(255, 102, 0, 0.2);
+    background-color: white;
+    border: 1px solid #fcc807;
     transform: translateX(-3px);
 }
 
@@ -234,13 +237,7 @@
     </style>
 </head>
 <body>
-    <div class="map-background"></div>
-    
-    <!-- Animated Background Paths -->
-    <div class="nav-path" style="top: 20%; left: 10%; width: 200px; transform: rotate(30deg);"></div>
-    <div class="nav-path" style="top: 40%; left: 30%; width: 300px; transform: rotate(-45deg);"></div>
-    <div class="nav-path" style="top: 60%; left: 50%; width: 250px; transform: rotate(60deg);"></div>
-    <div class="nav-path" style="top: 80%; left: 20%; width: 350px; transform: rotate(-30deg);"></div>
+   
     <a href="index.html" class="back-button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M19 12H5M12 19l-7-7 7-7"/>

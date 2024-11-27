@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #1a1a1a;
+    background-color: white;
     color: #ffffff;
     box-sizing: border-box;
 }
@@ -18,18 +18,19 @@ body {
 /* Section Styles */
 .section {
     flex: 1;
-    background: #2d2d2d;
+    background: white;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+ 
+    border: 1px solid #fcc807;
     min-width: 300px;
     border: 1px solid #404040;
 }
 
 h2, h3 {
     margin-top: 0;
-    color: #ff6b00;
-    border-bottom: 2px solid #404040;
+    color: #2c3992;
+    border-bottom: 2px solid #2c3992;
     padding-bottom: 10px;
 }
 
@@ -40,8 +41,19 @@ h2, h3 {
     gap: 20px;
 }
 
-.points-section, .details-section {
-    background: #333333;
+.points-section {
+    background: white;
+    
+    border: 1px solid #fcc807;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #404040;
+}
+
+.details-section {
+    background: white;
+    
+    border: 1px solid #fcc807;
     padding: 15px;
     border-radius: 4px;
     border: 1px solid #404040;
@@ -54,11 +66,12 @@ h2, h3 {
     gap: 10px;
     max-height: 70vh;
     overflow-y: auto;
+    border: 1px solid #404040;
 }
 
 /* Item Styles */
 .item {
-    background: #333333;
+   
     padding: 15px;
     border-radius: 4px;
     cursor: pointer;
@@ -66,31 +79,36 @@ h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #404040;
+    background-color: white;
+    border: 1px solid #fcc807;
+    color:#2c3992;
 }
 
 .item:hover {
-    background: #404040;
+    background-color: white;
+    border: 1px solid #2c3992;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(255, 107, 0, 0.1);
 }
 
 .item.active {
-    background: #404040;
-    border-left: 4px solid #ff6b00;
+    background: #2c3992;
+    border-left: 4px solid #fcc807;
+    color:#fcc807;
     box-shadow: 0 0 10px rgba(255, 107, 0, 0.2);
 }
 
 /* Point Item Styles */
 .point-item {
-    background: #333333;
+    background: #2c3992;
+    border-left: 4px solid #fcc807;
+    color:#fcc807;
     padding: 15px;
     border-radius: 4px;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #404040;
 }
 
 .point-info {
@@ -119,8 +137,8 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    background: #ff6b00;
-    color: white;
+    background: #fcc807;
+    color: #2c3992;
     transition: all 0.3s ease;
     font-weight: 500;
     text-transform: uppercase;
@@ -129,7 +147,8 @@ button {
 }
 
 button:hover {
-    background: #ff8533;
+    background-color: white;
+    border: 1px solid #fcc807;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(255, 107, 0, 0.2);
 }
@@ -147,19 +166,23 @@ button:disabled {
 }
 
 .edit-btn {
-    background: #ff6b00;
+    background: #fcc807;
+    color:#2c3992;
 }
 
 .edit-btn:hover {
-    background: #ff8533;
+    background-color: white;
+    border: 2px solid #fcc807;
 }
 
 .delete-btn {
-    background: #dc3545;
+    background: #fcc807;
+    color:#2c3992;
 }
 
 .delete-btn:hover {
-    background: #e4606d;
+    background-color: white;
+    border: 2px solid #fcc807;
 }
 
 /* Modal Styles */
@@ -203,9 +226,10 @@ textarea {
 /* Details View Styles */
 .details-container {
     padding: 20px;
-    background: #333333;
+    
     border-radius: 4px;
-    border: 1px solid #404040;
+    background-color: white;
+   
 }
 
 .details-image {
@@ -219,15 +243,18 @@ textarea {
 .details-field {
     margin-bottom: 15px;
     padding: 10px;
-    background: #2d2d2d;
+    background: #2c3992;
+    border-left: 4px solid #fcc807;
+    color:#fcc807;
     border-radius: 4px;
-    border: 1px solid #404040;
+    
 }
 
 .details-label {
     font-weight: bold;
-    color: #ff6b00;
+    color: #fcc807;
     margin-bottom: 5px;
+    border-bottom:1px solid #fcc807 ;
 }
 
 /* Scrollbar Styles */
@@ -241,7 +268,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff6b00;
+    background: #2c3992;
     border-radius: 4px;
     transition: background 0.3s ease;
 }
@@ -289,21 +316,21 @@ textarea {
 }
 
 .modal-content {
-    background-color: #2d2d2d;
+    background-color: white;
     margin: 40px auto;
     padding: 30px;
     border-radius: 12px;
     width: 90%;
     max-width: 600px;
     position: relative;
-    border: 1px solid #404040;
+    border: 1px solid #fcc807;
     box-shadow: 0 0 30px rgba(255, 107, 0, 0.15);
 }
 
 /* Form Styles - Enhanced */
 .form-group {
     margin-bottom: 25px;
-    background: #333333;
+    background: #fcc807;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid #404040;
@@ -318,7 +345,7 @@ textarea {
 .form-group label {
     display: block;
     margin-bottom: 10px;
-    color: #ff6b00;
+    color: #2c3992;
     font-weight: 600;
     font-size: 1.1em;
 }
@@ -329,8 +356,8 @@ textarea {
     padding: 12px;
     border: 2px solid #404040;
     border-radius: 6px;
-    background: #2d2d2d;
-    color: #ffffff;
+    background: white;
+    color: #2c3992;
     font-size: 1em;
     transition: all 0.3s ease;
 }
@@ -364,7 +391,7 @@ textarea {
 }
 
 .modal-header h2 {
-    color: #ff6b00;
+    color: #2c3992;
     margin: 0;
     font-size: 1.8em;
     border: none;
@@ -377,7 +404,7 @@ textarea {
     top: 25px;
     font-size: 28px;
     cursor: pointer;
-    color: #ff6b00;
+    color: #2c3992;
     transition: all 0.3s ease;
     width: 40px;
     height: 40px;
@@ -385,12 +412,12 @@ textarea {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: #333333;
+    background: #fcc807;
 }
 
 .close:hover {
-    color: #ff8533;
-    background: #404040;
+    color: #fcc807;
+    background: #2c3992;
     transform: rotate(90deg);
 }
 
@@ -413,11 +440,11 @@ textarea {
 }
 
 .modal-buttons button:first-child {
-    background: #ff6b00;
+    background: #fcc807;
 }
 
 .modal-buttons button:last-child {
-    background: #404040;
+    background: #fcc807;
 }
 
 .modal-buttons button:hover {
@@ -500,6 +527,9 @@ textarea {
     position: relative;
     top: 0;
     right: 0;
+     background-color: #fcc807;
+     color: #2c3992;
+   
 }
 
 .profile-icon {
@@ -519,7 +549,7 @@ textarea {
 }
 
 .profile-icon svg {
-    color: #ff6600;
+    color: #2c3992;
 }
 
 .profile-dropdown {
@@ -527,9 +557,10 @@ textarea {
     top: 100%;
     right: 0;
     margin-top: 10px;
-    background: #1a1a1a;
+    background: white;
     border-radius: 8px;
-    border: 1px solid rgba(255, 102, 0, 0.2);
+ 
+    border: 1px solid #fcc807;
     padding: 10px;
     min-width: 200px;
     display: none;
@@ -549,12 +580,12 @@ textarea {
 .dropdown-header strong {
     display: block;
     font-size: 12px;
-    color: #666;
+    color: #2c3992;
     margin-bottom: 4px;
 }
 
 .dropdown-header span {
-    color: #ff6600;
+    color: #2c3992;
     font-weight: 500;
 }
 
@@ -566,7 +597,7 @@ textarea {
     padding: 10px;
     background: none;
     border: none;
-    color: #ff6600;
+    color: #2c3992;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 4px;
@@ -577,7 +608,7 @@ textarea {
 }
 
 .logout-btn svg {
-    color: #ff6600;
+    color: #2c3992;
 }
 
 .admin-header {
@@ -586,11 +617,12 @@ textarea {
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    background: #2d2d2d;
+    background: white;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: 1px solid #404040;
+  
+    border: 1px solid #fcc807;
     max-width: 1400px; /* Match container max-width */
     margin-left: auto;
     margin-right: auto;
@@ -606,7 +638,7 @@ textarea {
 }
 
 .logo svg {
-    color: #ff6600;
+    color: #2c3992;
     width: 32px;
     height: 32px;
     animation: pulse 2s infinite, float 3s ease-in-out infinite;
@@ -615,7 +647,7 @@ textarea {
 
 .logo h1 {
     margin: 0;
-    color: #ff6600;
+    color: #2c3992;
     font-family: 'Orbitron', sans-serif;
     font-size: 24px;
     border: none;
@@ -623,7 +655,7 @@ textarea {
     letter-spacing: 1px;
     position: relative;
     animation: glow 3s ease-in-out infinite;
-    background: linear-gradient(90deg, #ff6600, #ff8533, #ff6600);
+    background: linear-gradient(90deg, #2c3992, #2c3992, #2c3992);
     background-size: 200% auto;
     -webkit-background-clip: text;
     background-clip: text;
@@ -638,7 +670,7 @@ textarea {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background: linear-gradient(90deg, transparent, #ff6600, transparent);
+    background: linear-gradient(90deg, transparent, #2c3992, transparent);
     animation: lineSlide 3s ease-in-out infinite;
 }
 
@@ -692,10 +724,10 @@ textarea {
     width: 100%;
     padding: 12px;
     border-radius: 4px;
-    background: #333333;
+    background: #2c3992;
     border: 1px solid #404040;
     
-    color: #ffffff;
+    color: #fcc807;
     font-size: 14px;
     margin-top: 8px;
     transition: all 0.3s ease;
@@ -712,24 +744,13 @@ textarea {
 }
 
 .point-select option {
-    background: #333333;
+    background: #2c3992;
     border: 1px solid #404040;
-    color: #ffffff;
+    color: #fcc807;
     padding: 10px;
 }
 
-/* Point Item Container */
-.point-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background: #333333;
-    border: 1px solid #404040;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
-}
+
 
 .point-item:hover {
     border-color: #ff6b00;
@@ -739,7 +760,7 @@ textarea {
 /* Point Value Text */
 .point-value {
     font-size: 14px;
-    color: #ffffff;
+    color: #fcc807;
 }
 
 /* Custom Dropdown Arrow */
@@ -776,8 +797,9 @@ textarea {
 
 /* Point Edit Button */
 .point-item .edit-btn {
-    background: #ff6b00;
-    color: #ffffff;
+    background: #fcc807;
+    color:#2c3992;
+    
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
@@ -786,7 +808,8 @@ textarea {
 }
 
 .point-item .edit-btn:hover {
-    background: #ff8533;
+    background-color: white;
+    border: 2px solid #fcc807;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(255, 107, 0, 0.2);
 }
