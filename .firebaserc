@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "finalproject-map-fbe81",
+    "staging": "finalproject-map-fbe81"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

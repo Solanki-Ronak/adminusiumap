@@ -1,0 +1,241 @@
+@media (max-width: 768px) {
+    .navigation-button {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .button-text {
+        font-size: 1em;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mode-btn, #getDirectionsBtn, #startJourneyBtn {
+        width: 90%;
+        padding: 14px;
+    }
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .button-text {
+        font-size: 1em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #modeButtonsSub8 .mode-btn, 
+    #getDirectionsBtnSub8, 
+    #startJourneyBtnSub8 {
+        width: 90%;
+        padding: 14px;
+    }
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .button-text {
+        font-size: 1em;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    #modeButtonsSub9 .mode-btn, 
+    #getDirectionsBtnSub9, 
+    #startJourneyBtnSub9 {
+        width: 90%;
+        padding: 14px;
+    }
+
+    .button-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .button-text {
+        font-size: 1em;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+   
+
+    :root {
+    --map-height: 60vh;
+    --controls-initial: 40vh;
+    --controls-expanded: 70vh;
+}
+.container {
+flex-direction: column;
+height: 100vh;
+position: relative;
+overflow: hidden;
+}
+
+#map {
+width: 100%;
+height: var(--map-height);
+position: fixed;
+top: 0;
+left: 0;
+}
+
+#controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 55vh;
+    background: #000;
+    z-index: 1000;
+    border-radius: 20px 20px 0 0;
+    touch-action: none; /* Prevents default touch behaviors */
+    -webkit-overflow-scrolling: touch;
+    transition: none;
+    will-change: transform, height;
+}
+
+/* Back button styling - positioned at the top-right corner within the container width */
+#backButton, #backButtonSub3, #backButtonSub4,
+#backButtonSub5, #backButtonSub6, #backButtonSub7,
+#backButtonSub8, #backButtonSub9 {
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: #ff6600;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+color: white;
+z-index: 1002;
+font-weight: bold;
+}
+
+
+
+#sub3DivContainer .header-background {
+position: absolute;
+top: 50px; /* Below the back button */
+right: 0;
+width: 100%;
+height: 110px;
+z-index: 1000;
+}
+
+/* Position the heading inside the header background */
+#sub3DivHeading {
+position: absolute;
+top: 60px; /* Adjust to place it centrally within the header background */
+width: 100%;
+text-align: center;
+color: white;
+font-size: 1.5em;
+font-weight: bold;
+z-index: 1001; /* Keeps it above the header background */
+}
+
+
+#sub7DivContainer .header-background1 {
+position: absolute;
+top: 50px; /* Below the back button */
+right: 0;
+width: 100%;
+height: 110px;
+z-index: 1000;
+}
+
+/* Position the source and destination headings inside the header background */
+#sourceHeading, #destinationHeading {
+position: absolute;
+width: 100%;
+text-align: center;
+color: white;
+font-size: 1.2em;
+font-weight: bold;
+z-index: 1001; /* Keeps it above the header background */
+}
+
+/* Adjust top positions for each heading */
+#sourceHeading {
+top: 60px; /* Centered within the header background */
+}
+
+#destinationHeading {
+top: 90px; /* Adjust to position below the source heading */
+}
+#sub8DivContainer .header-background1 {
+position: absolute;
+top: 50px; /* Below the back button */
+right: 0;
+width: 100%;
+height: 110px;
+z-index: 1000;
+}
+
+/* Position the source and destination headings inside the header background for sub8 */
+#sub8SourceHeading, #sub8DestinationHeading {
+position: absolute;
+width: 100%;
+text-align: center;
+color: white;
+font-size: 1.2em;
+font-weight: bold;
+z-index: 1001; /* Keeps it above the header background */
+}
+
+/* Adjust top positions for each heading in sub8 */
+#sub8SourceHeading {
+top: 60px; /* Centered within the header background */
+}
+
+#sub8DestinationHeading {
+top: 90px; /* Position below the source heading */
+}
+
+#sub9SourceHeading, #sub9DestinationHeading {
+position: absolute;
+width: 100%;
+text-align: center;
+color: white;
+font-size: 1.2em;
+font-weight: bold;
+z-index: 1001; /* Keeps it above the header background */
+}
+
+/* Adjust top positions for each heading in sub9 */
+#sub9SourceHeading {
+top: 60px; /* Centered within the header background */
+}
+
+#sub9DestinationHeading {
+top: 90px; /* Position below the source heading */
+}
+
+#sub9DivContainer .header-background1 {
+position: absolute;
+top: 50px; /* Below the back button */
+right: 0;
+width: 100%;
+height: 110px;
+z-index: 1000;
+}
+.sub3-content {
+margin-top: 20px; /* Match the header-background height */
+
+}
+}
